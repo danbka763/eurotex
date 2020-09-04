@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Calibri light', sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 header {
@@ -18,7 +18,7 @@ header>.container-header {
 }
 
 header>.container-header>nav {
-  width: 1080px;
+  width: 1180px;
   padding-top: 45px;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@ header>.container-header>nav {
 header>.container-header>nav>img {
   width: 259px;
   position: relative;
-  top: -2px;
+  top: -6px;
 }
 
 header>.container-header>nav>.rightNav {
@@ -38,7 +38,7 @@ header>.container-header>nav>.rightNav {
 
 header>.container-header>nav>.rightNav a {
   color: black;
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: none;
   margin: 0 20px;
 }
@@ -55,11 +55,11 @@ header>.container-header>nav>.rightNav>.phone {
   /* display: flex;
   align-items: center; */
   position: relative;
-  /* top: -7px; */
+  top: -7px;
 }
 
 header>.container-header>nav>.rightNav>.phone>div {
-  width: 218px;
+  width: 230px;
   text-align: right;
 }
 
@@ -72,5 +72,5 @@ header>.container-header>nav>.rightNav>.phone .feedback {
 }
 
 header>.content-header {
-  height: 1000px;
+  height: 900px;
 }
