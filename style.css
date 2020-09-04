@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Calibri light', sans-serif;
+}
+
+header {
+  background-image: url(PNG/BackgrHeader.jpg);
+  background-size: 100%;
+}
+
+header>.container-header {
+  display: flex;
+  justify-content: center;
+}
+
+header>.container-header>nav {
+  width: 1080px;
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: 700;
+}
+
+header>.container-header>nav>img {
+  width: 259px;
+  position: relative;
+  top: -2px;
+}
+
+header>.container-header>nav>.rightNav {
+  display: flex;
+}
+
+header>.container-header>nav>.rightNav a {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+header>.container-header>nav>.rightNav img {
+  display: inline;
+  position: relative;
+  left: 15px;
+  top: 2px;
+  width: 20px;
+}
+
+header>.container-header>nav>.rightNav>.phone {
+  /* display: flex;
+  align-items: center; */
+  position: relative;
+  /* top: -7px; */
+}
+
+header>.container-header>nav>.rightNav>.phone>div {
+  width: 218px;
+  text-align: right;
+}
+
+header>.container-header>nav>.rightNav>.phone .feedback {
+  font-size: 13px;
+  position: relative;
+  top: -5px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+header>.content-header {
+  height: 1000px;
+}
