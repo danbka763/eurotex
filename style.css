@@ -177,6 +177,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 main section {
@@ -197,8 +198,10 @@ main section .title-block hr {
   background-color: black;
 }
 
-main section#s1 {
+main section#s1, main section#s3 {
   background-color: #dbdcde;
+  box-shadow: 0 0 50px 15px;
+  z-index: 1;
 }
 
 main section .title-block {
@@ -284,3 +287,44 @@ main section .service-flex .right-div button {
 main section .service-flex .right-div button:hover {
   background-color: rgba(63, 63, 63, 0.95);
 }
+
+main section#s2, main section#s4{
+  background-color: #dbdcde;
+}
+
+main section#s2 .content-s2 .info-service {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main section#s2 .content-s2 .info-service>div {
+  width: 425px;
+}
+
+main section#s2 .content-s2 .info-service p {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+main section#s3 .flex-block-logo-car {
+  margin: 50px 0 0 25px;
+  width: 85%;
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+main section#s3 .flex-block-logo-car>div {
+  margin: 5px;
+  width: 70px; height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+main section#s3 img { position: relative; }
+main section#s3 .flex-block-logo-car>div .tota { top: 7px; }
+main section#s3 .flex-block-logo-car>div .reno { top: 3px; }
