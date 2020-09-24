@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Eurotex</title>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+  <script src="data/servicesData.js"></script>
+  <script src="data/iconCarData.js"></script>
+  <script src="data/sliderWorkData.js"></script>
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
   <header>
@@ -71,7 +78,12 @@
             </p>
           </div>
         </div>
-        <div class="service-flex" id="services"></div>
+        <div class="service-flex" id="services">
+          <!-- 
+            Предлагаемые услуги (Правильно заполненный массив данных в
+            servicesData.js гарантирует правильный вывод данных) 
+          -->
+        </div>
     </section>
 
     <section id="s2">
@@ -102,44 +114,78 @@
           <article>Стекла на все марки автомобиля</article>
           <hr>
         </div>
-        <div class="flex-block-logo-car">
-          <div><img width="65" src="PNG/logo_car/Ford.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Hyundai.png" alt=""></div>
-          <div><img width="105" src="PNG/logo_car/Infiniti.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/KIA.png" alt=""></div>
-          <div><img width="60" src="PNG/logo_car/Mazda.png" alt=""></div>
-          <div><img width="115" src="PNG/logo_car/Mercedes.png" alt=""></div>
-          <div><img width="55" src="PNG/logo_car/Mitsubishi.png" alt=""></div>
-          <div><img width="55" src="PNG/logo_car/nissan.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Opel.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Renault.png" class="reno" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Seat.png" alt=""></div>
-          <div><img width="55" src="PNG/logo_car/Skoda.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Subaru.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Toyota.png" class="tota" alt=""></div>
-          <div><img width="55" src="PNG/logo_car/Volkwagen.png" alt=""></div>
-          <div><img width="55" src="PNG/logo_car/Citroen.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Volvo.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Lexus.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Audi.png" alt=""></div>
-          <div><img width="65" src="PNG/logo_car/Land Rover.png" alt=""></div>
-          <div><img width="55" src="PNG/logo_car/BMW.png" alt=""></div>
-          <div><img height="55" src="PNG/logo_car/Peugeot.png" alt=""></div>
-          <div><img height="55" src="PNG/logo_car/Ferrari.png" alt=""></div>
-          <div><img height="55" src="PNG/logo_car/Porsche.png" alt=""></div>
+        <div class="flex-block-logo-car" id="logoCar">
+          <!-- 
+            Логотипы машин (Правильно заполненный массив данных 
+            в iconCarData.js гарантирует правильный вывод данных)
+          -->
         </div>
       </div>
     </section>
 
     <section id="s4">
       <div class="content-s4">
-        
+        <article>Наши работы</article>
+        <div class="slick-block" id="slick">
+          <!-- 
+            Слайд-сликер (Правильно заполненный массив данных 
+            в sliderWorkData.js гарантирует правильный вывод данных) 
+          -->
+        </div>
+        <div class="more-work">
+          <p style="display: inline;">Смотрите больше наших работ в Instagram</p>
+          <a href="">
+            <img src="PNG/inst_icon.png" alt="иконка Instagram" width="30">
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="s5">
+      <div class="content-s5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.460324968467!2d57.212850815940136!3d50.30200110593094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41822108b560f771%3A0x4a7e3aad3564976e!2z0JzQtdCx0LXQu9GM0L3QsNGPINGD0LvQuNGG0LAgMiwg0JDQutGC0L7QsdC1IDAzMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1600910573869!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="block-s5">
+          <div>
+            <b>Записаться на замену автостекла</b> в Актобе
+            <br>
+            <button>Записаться</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <script src="servicesData.js"></script>
-  <script src="services.js"></script>
+  <footer>
+    <div class="content-footer">
+      <div class="footer-flex">
+        <div style="display: flex; align-items: center; margin-right: 30px;">
+          <img src="PNG/logo.png" alt="логотип" width="250">
+        </div>
+        <div>
+          <article>Адрес</article>
+          <p>г.Актобе Мебельная улица 2</p>
+        </div>
+        <div>
+          <article>Контакты</article>
+          <p>8(701)-288-26-51</p>
+        </div>
+        <div>
+          <article>Мы в соц.сетях</article>
+          <a href=""><img src="PNG/inst_icon_footer.png" width="30" alt="иконка Instagram"></a>
+        </div>
+      </div>
+      <div style="display: flex; 
+                  justify-content: center; 
+                  margin-top: 30px;
+                  margin-bottom: 60px;">
+        "EUROTEX" 2020 © Все права защищены
+      </div>
+    </div>
+  </footer>
 
+  <script src="scriptJS/services.js"></script>
+  <script src="scriptJS/iconCar.js"></script>
+  <script src="scriptJS/slickScript.js"></script>
+  <script src="scriptJS/sliderWorkGetIMG.js"></script>
 </body>
 </html>
