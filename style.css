@@ -38,7 +38,7 @@ body {
 
 header {
   background-image: url(PNG/BackgrHeader.jpg);
-  background-size: 100%;
+  background-position: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -91,6 +91,10 @@ header>.container-header>nav>.rightNav img {
   width: 20px;
 }
 
+header>.container-header>nav>.rightNav .menu-mobile {
+  display: none;
+}
+
 header>.container-header>nav>.rightNav>.phone {
   position: relative;
   top: -7px;
@@ -99,6 +103,10 @@ header>.container-header>nav>.rightNav>.phone {
 header>.container-header>nav>.rightNav>.phone>div {
   width: 230px;
   text-align: right;
+}
+
+header>.container-header>nav>.rightNav>.phone>div>a {
+  font-size: 27px;
 }
 
 header>.container-header>nav>.rightNav>.phone .feedback {
@@ -127,6 +135,10 @@ header>.content-header h2 {
   font-weight: 400;
 }
 
+header>.content-header .first-h2 {
+  margin: 70px 0 10px;
+}
+
 header>.content-header .button-block {
   height: 70px;
 }
@@ -140,6 +152,10 @@ header>.content-header button {
   width: 400px; height: 70px;
   font-size: 30px;
   cursor: pointer;
+}
+
+header>.content-header .line-header {
+  width: 550px;
 }
 
 header>.content-header button:hover {
@@ -162,6 +178,16 @@ header>.content-header .flex-icon>div {
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
+}
+
+header>.content-header .flex-icon .img1 {
+  width: 240px;
+}
+header>.content-header .flex-icon .img2 {
+  width: 150px;
+}
+header>.content-header .flex-icon .img3 {
+  width: 250px;
 }
 
 header>.content-header .flex-icon p {
@@ -213,7 +239,7 @@ main section .title-block article {
 main section .info-block {
   background-image: url("PNG/backgr-info.png");
   margin: 50px 0 0 25px;
-  width: 865px;
+  max-width: 865px;
 }
 
 main section .info-block>div {
@@ -222,7 +248,7 @@ main section .info-block>div {
 
 main section .info-block p {
   padding: 50px 50px 50px 20px;
-  width: 700px;
+  max-width: 700px;
   font-size: 20px;
   text-align: justify;
   text-indent: 35px;
@@ -295,6 +321,10 @@ main section#s2 .content-s2 .info-service>div {
   width: 425px;
 }
 
+main section#s2 .content-s2 .info-service img {
+  height: 240px;
+}
+
 main section#s2 .content-s2 .info-service p {
   font-size: 24px;
   margin-top: 40px;
@@ -321,6 +351,7 @@ main section#s3 .flex-block-logo-car>div {
 main section#s3 img { position: relative; }
 
 main section#s4 article {
+  width: 380px;
   position: relative;
   top: -70px;
   left: 60px;
@@ -336,6 +367,12 @@ main section#s4 .slick-block {
   display: flex;
   align-items: center;
   margin-top: 50px;
+  text-align: center;
+}
+
+main section#s4 .slick-slide>img {
+  width: 320px; 
+  margin-left: 20px;
 }
 
 main section#s4 .slick-block>div {
@@ -360,12 +397,14 @@ main section#s4 .next {
 main section#s4 .more-work {
   display: flex;
   align-items: center;
-  margin-top: 30px;
   font-size: 20px;
+  margin: 30px 25px 0;
 }
 
 main section#s4 .more-work a {
   margin-left: 15px;
+  position: relative;
+  top: 2px;
 }
 
 main section#s5 {
@@ -438,4 +477,340 @@ footer .content-footer .footer-flex>div {
   width: 230px;
   margin-left: 30px;
   height: 70px;
+}
+
+
+
+@media screen and (min-width: 1920px) {
+  header {
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1316px) {
+  main>section#s4 .content-s4 .slick {
+    display: flex;
+    justify-content: center;
+  }
+  main>section#s4 .content-s4 .slick-block {
+    width: 790px;
+  }
+  main section#s4 .slick-slide>img {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1304px) {
+  header>.container-header>nav {
+    width: 920px;
+  }
+  header>.container-header>nav>img {
+    width: 170px;
+  }
+  header>.container-header>nav>.rightNav {
+    position: relative;
+    top: -5px;
+  }
+  header>.container-header>nav>.rightNav a {
+    font-size: 18px;
+  }
+  header>.container-header>nav>.rightNav>.phone img {
+    width: 17px;
+  }
+  header>.container-header>nav>.rightNav>.phone>div>a {
+    font-size: 24px;
+  }
+  header>.container-header>nav>.rightNav>.phone .feedback {
+    font-size: 11.5px;
+  }
+
+  header>.content-header {
+    max-width: 920px;
+  }
+  header>.content-header h1 {
+    font-size: 56px;
+  }
+  header>.content-header h2 {
+    font-size: 38px;
+  }
+  header>.content-header button {
+    width: 300px; height: 60px;
+    font-size: 28px;
+  }
+  header>.content-header .line-header {
+    width: 400px;
+  }
+  header>.content-header .flex-icon>div {
+    height: 200px;
+  }
+  header>.content-header .flex-icon .img1 {
+    width: 200px;
+  }
+  header>.content-header .flex-icon .img2 {
+    width: 110px;
+  }
+  header>.content-header .flex-icon .img3 {
+    width: 210px;
+  }
+  header>.content-header .flex-icon p {
+    font-size: 28px;
+  }
+
+  main section#s2 .content-s2 .info-service {
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  main section#s2 .content-s2 .info-service>div {
+    width: 325px;
+  }
+  main section#s2 .content-s2 .info-service img {
+    height: 190px;
+  }
+  main section#s2 .content-s2 .info-service p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  main section#s4 article {
+    font-size: 40px;
+    margin-left: 50px;
+    text-shadow: black -50px 50px 1px;
+    width: 298px;
+  }
+}
+
+@media screen and (max-width: 1159px) {
+  main section .info-block {
+    max-width: 865px;
+    margin-right: 25px;
+  }
+  main section .service-flex {
+    justify-content: center;
+  }
+
+  main section#s2 .content-s2 .info-service>div {
+    width: 285px;
+  }
+  main section#s2 .content-s2 .info-service img {
+    height: 170px;
+  }
+  main section#s2 .content-s2 .info-service p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  main section .info-block p {
+    padding: 30px 20px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    background-position: bottom -300px right -850px;
+  }
+  header>.container-header {
+    width: 100%;
+  }
+  header>.container-header>nav {
+    padding-top: 20px;
+    padding: 20px 20px 10px;
+  }
+  header>.container-header>nav>.rightNav {
+    flex-direction: row-reverse;
+  }
+  header>.container-header>nav>.rightNav .menu-desctop {
+    display: none;
+  }
+  header>.container-header>nav>.rightNav .menu-mobile {
+    display: block;
+  }
+
+  header>.content-header {
+    width: 100%;
+    padding: 15px;
+  }
+  header>.content-header h1 {
+    font-size: 40px;
+  }
+  header>.content-header h2 {
+    font-size: 28px;
+  }
+  header>.content-header button {
+    width: 280px; height: 55px;
+  }
+  header>.content-header .line-header {
+    width: 350px;
+  }
+  header>.content-header .flex-icon {
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  header>.content-header .flex-icon>div {
+    max-width: 200px; height: 200px;
+  }
+  header>.content-header .flex-icon .img1 {
+    width: 170px;
+  }
+  header>.content-header .flex-icon .img2 {
+    width: 90px;
+  }
+  header>.content-header .flex-icon .img3 {
+    width: 180px;
+  }
+  header>.content-header .flex-icon p {
+    font-size: 26px;
+  }
+
+  main section#s2 .content-s2 .info-service>div {
+    width: 245px;
+    margin-bottom: 35px;
+  }
+  main section#s2 .content-s2 .info-service img {
+    height: 140px;
+  }
+  main section#s2 .content-s2 .info-service p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  
+}
+
+@media screen and (max-width: 845px) {
+  main>section#s4 .content-s4 .slick-block {
+    max-width: 450px;
+  }
+  main section#s4 article {
+    font-size: 32px;
+    text-shadow: black -35px 35px 1px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header {
+    background-position: bottom -220px right -850px;
+  }
+  header>.content-header .flex-icon {
+    flex-wrap: wrap;
+  }
+  header>.content-header .flex-icon>div {
+    max-width: 200px; height: 155px;
+    margin-bottom: 20px;
+  }
+
+  header>.content-header h1 {
+    font-size: 28px;
+  }
+  header>.content-header h2 {
+    font-size: 20px;
+  }
+  header>.content-header .first-h2 {
+    margin: 30px 0 5px;
+  }
+  header>.content-header button {
+    margin-top: 25px;
+    width: 240px; height: 45px;
+    font-size: 24px;
+  }
+  header>.content-header .line-header {
+    width: 270px;
+  }
+  header>.content-header .flex-icon>div {
+    max-width: 200px; height: 180px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  main section .service-flex>div {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main section .service-flex>div>div {
+    width: 100%;
+    text-align: center;
+  }
+  main section .service-flex img {
+    max-width: 400px;
+  }
+  main section .service-flex .logo-services {
+    display: none;
+  }
+  main section .service-flex .right-div article {
+    margin: 20px 0 10px;
+  }
+  main section .service-flex .right-div button {
+    margin: 20px 0 10px;
+  }
+
+  main section#s3 .flex-block-logo-car {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  main section .title-block hr {
+    width: 360px;
+  }
+  main section#s4 article {
+    left: 20px;
+  }
+  main section#s4 .more-work {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  main section .info-block p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main>section#s4 .content-s4 .slick-block {
+    width: 340px;
+  }
+  main section#s4 .slick-slide>img {
+    width: 280px; 
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    background-position: bottom -160px right -950px;
+  }
+  header>.container-header>nav>.rightNav>.phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  header>.content-header .flex-icon>div {
+    max-width: 200px; height: auto;
+    align-content: center;
+  }
+  header>.content-header .flex-icon p {
+    margin-top: 10px;
+  }
+  
+  main section .info-block p {
+    font-size: 14px;
+  }
+  main section .title-block {
+    font-size: 22px;
+  }
+  main section .title-block hr {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  main section#s4 article {
+    left: 10px;
+  }
 }

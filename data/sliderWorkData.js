@@ -1,10 +1,5 @@
 const sliderWorkData = [
   {
-    id: 0,
-    image: "wp1.jpeg",
-    alt: "Одна из выполненных работ"
-  },
-  {
     id: 1,
     image: "wp2.jpeg",
     alt: "Одна из выполненных работ"

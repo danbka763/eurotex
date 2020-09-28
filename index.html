@@ -20,13 +20,18 @@
       <nav>
         <img src="PNG/logo.png" alt="logo">
         <div class="rightNav">
-          <a href="#s1">Замена Автосёкол</a>
-          <a href="">Портфолио</a>
-          <a href="">Контакты</a>
+          <div class="menu-desctop">
+            <a href="#s1">Замена Автосёкол</a>
+            <a href="">Портфолио</a>
+            <a href="">Контакты</a>
+          </div>
+          <div class="menu-mobile">
+            
+          </div>
           <div class="phone">
             <div>
               <img src="PNG/phone_icon.png" alt="phone_icon">
-              <a href="tel:+77012882651" style="font-family: 'Calibri light', sans-serif; font-size: 27px;">+77012882651</a>
+              <a href="tel:+77012882651" style="font-family: 'Calibri light', sans-serif">+77012882651</a>
             </div>
             <div>
               <a href="" class="feedback">Заказать обратный звонок</a>
@@ -38,20 +43,20 @@
     <div class="content-header">
       <h1>ЗАМЕНА АВТОСТЕКЛА в городе Актобе</h1>
       <div class="button-block"><button>Записаться</button></div>
-      <h2 style="margin: 70px 0 10px">Мы работаем не на время, а на качество.</h2>
-      <img src="PNG/line.png" alt="line" width="550">
+      <h2 class="first-h2">Мы работаем не на время, а на качество.</h2>
+      <img src="PNG/line.png" alt="line" class="line-header">
       <h2 style="margin-top: 10px">И следовательно гарантируем вам</h2>
       <div class="flex-icon">
         <div>
-          <img src="PNG/bow.png" alt="line" width="240">
+          <img src="PNG/bow.png" alt="line" class="img1">
           <p>Элегантность</p>
         </div>
         <div>
-          <img src="PNG/shield.png" alt="line" width="150">
+          <img src="PNG/shield.png" alt="line" class="img2">
           <p>Надежность</p>
         </div>
         <div>
-          <img src="PNG/glass-cleaning.png" alt="line" width="250">
+          <img src="PNG/glass-cleaning.png" alt="line" class="img3">
           <p>Качество</p>
         </div>
       </div>
@@ -91,18 +96,18 @@
       <div class="content-s2">
         <div class="info-service">
           <div>
-            <img src="PNG/car.png" alt="" height="240">
+            <img src="PNG/car.png" alt="">
             <p>
               Автостекла производство КМК (Россия) XYG (Китай)  AGC
               (Европа)
             </p>
           </div>
           <div>
-            <img src="PNG/recruitment.png" alt="" height="240">
+            <img src="PNG/recruitment.png" alt="">
             <p>Мастера с опытом более 20 лет</p>
           </div>
           <div>
-            <img src="PNG/data-warehouse.png" alt="" height="240">
+            <img src="PNG/data-warehouse.png" alt="">
             <p>Всегда в наличии автостекла на все автомобили</p>
           </div>
         </div>
@@ -127,11 +132,13 @@
     <section id="s4">
       <div class="content-s4">
         <article>Наши работы</article>
-        <div class="slick-block" id="slick">
-          <!-- 
-            Слайд-сликер (Правильно заполненный массив данных 
-            в sliderWorkData.js гарантирует правильный вывод данных) 
-          -->
+        <div class="slick">
+          <div class="slick-block" id="slick">
+            <!-- 
+              Слайд-сликер (Правильно заполненный массив данных 
+              в sliderWorkData.js гарантирует правильный вывод данных) 
+            -->
+          </div>
         </div>
         <div class="more-work">
           <p style="display: inline;">Смотрите больше наших работ в Instagram</p>
@@ -156,7 +163,7 @@
     </section>
   </main>
 
-  <footer>
+  <!-- <footer>
     <div class="content-footer">
       <div class="footer-flex">
         <div style="display: flex; align-items: center; margin-right: 30px;">
@@ -182,7 +189,7 @@
         "EUROTEX" 2020 © Все права защищены
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="scriptJS/services.js"></script>
   <script src="scriptJS/iconCar.js"></script>

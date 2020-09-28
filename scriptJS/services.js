@@ -17,7 +17,7 @@ for (let i = 0; i < servicesData.length; i++) {
     <img src="${startHref_IMG}${servicesData[i].imageName}" 
          alt="" 
          width="100%">
-    <div style="text-align: center">${logo}</div>
+    <div style="text-align: center" class="logo-services">${logo}</div>
   </div>
   <div class="right-div">
     <div>
