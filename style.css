@@ -29,7 +29,7 @@ button::-moz-focus-inner {
 
 ::selection {
   color: rgb(70, 70, 70) !important;
-  background: #efff0a !important;
+  background: #def0f8 !important;
 }
 
 body {
@@ -42,6 +42,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
 }
 
 header .gradient {
@@ -424,8 +432,7 @@ main section#s5 .content-s5 iframe {
 main section#s5 .content-s5 .block-s5 {
   z-index: 1;
   position: relative;
-  left: 60%;
-  top: 30px;
+  left: 60%; top: 30px;
   width: 450px;
   background-color: white;
   box-shadow: 0 0 8px black;
@@ -462,7 +469,7 @@ footer {
 
 footer .content-footer {
   width: 1180px;
-  padding: 20px 0 0;
+  padding: 0 0 20px 0;
   color: white;
   font-size: 20px;
 }
@@ -471,11 +478,13 @@ footer .content-footer .footer-flex {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 footer .content-footer .footer-flex>div {
   width: 230px;
   margin-left: 30px;
+  margin-top: 30px;
   height: 70px;
 }
 
@@ -598,12 +607,35 @@ footer .content-footer .footer-flex>div {
   main section#s2 .content-s2 .info-service p {
     font-size: 18px;
   }
+
+  main section#s5 .content-s5 .block-s5 {
+    width: 350px;
+    font-size: 18px;
+    left: 55%;
+  }
+  main section#s5 .content-s5 .block-s5>div {
+    padding: 15px 20px;
+  }
+  main section#s5 .content-s5 .block-s5 button {
+    width: 150px; height: 40px;
+    margin-top: 15px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 810px) {
   main section .info-block p {
     padding: 30px 20px;
     font-size: 17px;
+  }
+
+  main section#s5 .content-s5 .block-s5 {
+    width: 350px;
+    font-size: 18px;
+    position: absolute;
+    top: auto;
+    left: auto;
+    margin: 10px;
   }
 }
 
@@ -777,6 +809,18 @@ footer .content-footer .footer-flex>div {
   main section#s4 .slick-slide>img {
     width: 280px; 
     margin-left: 0;
+  }
+
+  main section#s5 .content-s5 .block-s5 {
+    width: 300px;
+    font-size: 14px;
+  }
+  main section#s5 .content-s5 .block-s5>div {
+    padding: 10px 15px;
+  }
+  main section#s5 .content-s5 .block-s5 button {
+    margin-top: 10px;
+    font-size: 14px;
   }
 }
 
