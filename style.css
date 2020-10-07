@@ -37,7 +37,8 @@ body {
 }
 
 header {
-  background-image: url(PNG/BackgrHeader.jpg);
+  background: url(PNG/BackgrHeader.jpg) no-repeat,
+              linear-gradient(to right, #bfc0c5, #aaaaabf0);
   background-position: center;
   display: flex;
   flex-wrap: wrap;
@@ -723,7 +724,9 @@ footer .content-footer .footer-flex>div {
 
 @media screen and (max-width: 630px) {
   header {
-    background-position: bottom -220px right -850px;
+    background-position: top 0 left 50%;
+    background-size: 630px;
+    background-repeat: no-repeat;
   }
   header>.content-header .flex-icon {
     flex-wrap: wrap;
@@ -826,7 +829,10 @@ footer .content-footer .footer-flex>div {
 
 @media screen and (max-width: 450px) {
   header {
-    background-position: bottom -160px right -950px;
+    background-position: top 0 left 50%;
+    background-size: 450px;
+    background-repeat: no-repeat;
+
   }
   header>.container-header>nav>.rightNav>.phone {
     display: none;
