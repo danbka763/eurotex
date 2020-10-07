@@ -38,7 +38,7 @@ body {
 
 header {
   background: url(PNG/BackgrHeader.jpg) no-repeat,
-              linear-gradient(to right, #bfc0c5, #aaaaabf0);
+              linear-gradient(to right, #bfc0c5,#a8a8adf0);
   background-position: center;
   display: flex;
   flex-wrap: wrap;
