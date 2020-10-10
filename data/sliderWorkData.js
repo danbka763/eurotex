@@ -1,97 +1,77 @@
 const sliderWorkData = [
   {
-    id: 1,
-    image: "wp2.jpeg",
-    alt: "Одна из выполненных работ"
-  },
-  {
     id: 2,
-    image: "wp3.jpeg",
+    image: "wp3.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 3,
-    image: "wp4.jpeg",
+    image: "wp4.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 4,
-    image: "wp5.jpeg",
+    image: "wp5.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 5,
-    image: "wp6.jpeg",
+    image: "wp6.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 6,
-    image: "wp7.jpeg",
+    image: "wp7.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 8,
-    image: "wp9.jpeg",
+    image: "wp9.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 9,
-    image: "wp10.jpeg",
+    image: "wp10.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 10,
-    image: "wp11.jpeg",
+    image: "wp11.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 11,
-    image: "wp12.jpeg",
+    image: "wp12.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 12,
-    image: "wp13.jpeg",
+    image: "wp13.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 13,
-    image: "wp14.jpeg",
+    image: "wp14.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 14,
-    image: "wp15.jpeg",
+    image: "wp15.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 15,
-    image: "wp16.jpeg",
+    image: "wp16.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 16,
-    image: "wp17.jpeg",
+    image: "wp17.jpg",
     alt: "Одна из выполненных работ"
   },
   {
     id: 17,
-    image: "wp18.jpeg",
-    alt: "Одна из выполненных работ"
-  },
-  {
-    id: 18,
-    image: "wp19.jpeg",
-    alt: "Одна из выполненных работ"
-  },
-  {
-    id: 19,
-    image: "wp20.jpeg",
-    alt: "Одна из выполненных работ"
-  },
-  {
-    id: 20,
-    image: "wp21.jpeg",
+    image: "wp18.jpg",
     alt: "Одна из выполненных работ"
   },
 ]

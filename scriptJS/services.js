@@ -1,5 +1,5 @@
 let services = document.getElementById("services")
-const startHref_IMG = "PNG/"
+const startHref_IMG = "PNG/services/"
 
 for (let i = 0; i < servicesData.length; i++) {
   let logo = ""

@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name = "description" content="Земена автостекол в городе Актобе.">
+  <meta name = "keywords" content="eurotex, автостекла, замена, актобе, устранение сколов на стекле">
+  <meta name="yandex-verification" content="e3414d691f3543ce" />
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <title>Eurotex</title>
+  <title>Eurotex - замена автостекол в г. Актобе</title>
   <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
   <script src="data/servicesData.js"></script>
@@ -62,7 +65,6 @@
         </div>
       </div>
     </div>
-    <!-- <span class="gradient"></span> -->
   </header>
 
   <main>
@@ -151,15 +153,8 @@
     </section>
     
     <section id="s5">
-      <div class="content-s5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.460324968467!2d57.212850815940136!3d50.30200110593094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41822108b560f771%3A0x4a7e3aad3564976e!2z0JzQtdCx0LXQu9GM0L3QsNGPINGD0LvQuNGG0LAgMiwg0JDQutGC0L7QsdC1IDAzMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1600910573869!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="block-s5">
-          <div>
-            <b>Записаться на замену автостекла</b> в Актобе
-            <br>
-            <button>Записаться</button>
-          </div>
-        </div>
+      <div class="content-s5" id="c-s5">
+        
       </div>
     </section>
   </main>
@@ -198,6 +193,22 @@
   <script src="scriptJS/iconCar.js"></script>
   <script src="scriptJS/slickScript.js"></script>
   <script src="scriptJS/sliderWorkGetIMG.js"></script>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("c-s5").innerHTML = 
+      `
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.460324968467!2d57.212850815940136!3d50.30200110593094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41822108b560f771%3A0x4a7e3aad3564976e!2z0JzQtdCx0LXQu9GM0L3QsNGPINGD0LvQuNGG0LAgMiwg0JDQutGC0L7QsdC1IDAzMDAwMCwg0JrQsNC30LDRhdGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1600910573869!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="block-s5">
+          <div>
+            <b>Записаться на замену автостекла</b> в Актобе
+            <br>
+            <button>Записаться</button>
+          </div>
+        </div>
+      `
+    }, 2000)
+  </script>
 
 </body>
 </html>
