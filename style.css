@@ -53,13 +53,6 @@ header {
                                   not supported by any browser */
 }
 
-header .gradient {
-  position: absolute;
-  top: 990px;
-  width: 100%; height: 70px;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(255, 255, 255, 0));
-}
-
 header>.container-header {
   display: flex;
   justify-content: center;
@@ -748,6 +741,9 @@ footer .content-footer .footer-flex>div.block-img {
 }
 
 @media screen and (max-width: 630px) {
+  main {
+    box-shadow: 0 0 750px 450px rgb(0, 0, 0, 0.35);
+  }
   header {
     background-position: top 0 left 50%;
     background-size: 630px;
